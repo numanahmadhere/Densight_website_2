@@ -1,0 +1,59 @@
+/* Add this to your globals.css file */
+
+@media (max-width: 640px) {
+  /* Improve touch targets */
+  button,
+  a {
+    min-height: 44px;
+  }
+
+  /* Adjust font sizes */
+  h1 {
+    font-size: 1.75rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Improve form elements */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important; /* Prevents iOS zoom on focus */
+  }
+
+  /* Add more breathing room */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Improve mobile scrolling */
+  .overflow-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Fix for mobile viewport height issues */
+html,
+body {
+  height: -webkit-fill-available;
+}
+
+/* Improve mobile dropdown menus */
+.mobile-menu-item {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Fix for mobile sticky positioning */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
